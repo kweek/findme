@@ -1,0 +1,59 @@
+  <div class="login-signup-wrapper container">	
+	<div class="login-signup-menu">
+		
+			<ul>
+				<!-- login and signup forms -->
+				<li class="btn btn-success" ng-click="logIn()">Login</li>
+				<li class="btn btn-success" ng-click="signUp()">Signup</li>
+			</ul>
+		</div>
+		<div class="forms-conntainer">
+
+			<!-- Login Form -->
+			<div class="login-signup-form" >
+				<form role="form" name="login" ng-show="showLogin" ng-submit="loginUser()">
+					<div class="form-group">
+						<label for="email">Email</label>
+							<input type="text" class="form-control" id="email" name="email" placeholder="Enter email" ng-model="user.email" required>
+							<p class="error" ng-if="login.email.$error.required && login.email.$dirty"> The Email is required</p>
+							<div ng-if="login.email.$invalid && login.email.$dirty">Invalid email</div>
+	  			
+				  	<div class="form-group">
+					 	 <label for="password">Password</label>
+					 	 <input type="password" class="form-control" name="password" placeholder="Password" ng-model="user.password" required>
+					 	 <p class="error" ng-if="login.password.$error.required && login.email.$dirty"> Your password is required</p> 
+					</div>
+	  			  <button type="submit" class="btn btn-default" >Submit</button>
+				</form> 	 
+			</div>
+
+			<!-- Signup Form -->
+			<div class='login-signup-form' >
+			
+			<form role="form" ng-show="showSignup" ng-submit="signupUser()">
+			    <div class="form-group">
+				   	 <label for="name">Name</label>
+				   	 	<input type="text" class="form-control" name="name" placeholder="Enter Name" ng-model="newUser.name" required>
+				   	 	<p class="error" ng-if="signUp.name.$error.required && signUp.name.$dirty">Name is required</p>
+				</div>
+				 <div class="form-group">
+				   	  <label for="inputEmail">Email address</label>
+				   	 	<input type="email" class="form-control" name="email" placeholder="Enter email" ng-model="newUser.email" required>
+				   	 	<p class="error" ng-if="signUp.email.$error.required && signUp.email.$dirty">Email is required</p>
+				   	 	</div>
+				
+				  <div class="form-group">
+					 	 <label for="inputPassword">Password</label>
+					 	 <input type="password" class="form-control" name="password" placeholder="Enter password"  ng-model="newUser.password" required>
+				   	 	<p class="error" ng-if="signUp.password.$error.required && signUp.password.$dirty">Password is required</p>
+				  </div>
+	<div class="right container">
+	</div>			  
+	  			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			</div>
+		</div>	
+</div>		
+
+
+

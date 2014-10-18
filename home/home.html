@@ -1,0 +1,24 @@
+Hello {{profile.name}}
+<div class="map-container">
+   <google-map center="map.center" zoom="map.zoom" control="map.control">
+     <markers models="userMarker" coords="'self'"></markers>
+ 
+   </google-map>
+
+</div>
+<div class="chat-container">
+	<h2>Plastics Chat</h2>
+	<form>
+		<input class="form-control text-box" type="text" ng-model="chat.text" placeholder="Chat Here"> 
+			<input class="button" type="submit" placeholder="submit" ng-click="postChats()"> 
+			<div class="clear"></div>
+	</form>
+	<div class="chat-container">
+		<p ng-repeat="chat in chats"> {{chat.text}} - {{chat.postedBy}}</p>
+			<button ng-click="goDelete()">Delete</button>
+			</div>
+	</div>
+
+</div>
+
+

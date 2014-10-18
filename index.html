@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html ng-app="localPair">
+
+	<head>
+		<title>Local Pair</title>
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+	
+
+	</head>
+
+	<body >
+		<div class="header-wrapper" ng-include="'header/header.html'" ng-controller="headerCtrl"></div>
+
+
+		<div class="main" ng-controller="mainCtrl"> 
+		</div>
+		
+		<div ng-view>
+		</div>
+
+		
+
+
+
+
+	
+
+
+ 	 
+		<!---AngularJS-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+
+	  <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.js"></script>
+	  <!-- RSVP -->
+	  <script src="http://rsvpjs-builds.s3.amazonaws.com/rsvp-latest.min.js"></script>
+	  <!-- Firebase -->
+	  <script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+	  <!-- GeoFire -->
+	  <script src="https://cdn.firebase.com/libs/geofire/2.0.0/geofire.min.js"></script>
+		<!-- angularjs map -->
+		<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js'></script>
+		<script src='js/angular-google-maps.min.js'></script>
+	 
+	  
+	  <script src="js/app.js"></script>
+	  <script src="js/env.js"></script>
+	  <script src="js/envService.js"></script>
+	  <script src="services/authService.js"></script>
+	  <script src="login/loginCtrl.js"></script> 
+	  <script src="js/mainCtrl.js"></script>
+	  <script src="home/homeCtrl.js"></script>
+	  <script src="services/fireService.js"></script>
+	  <script src="services/chatService.js"></script>
+	  <script src="header/headerCtrl.js"></script>
+	 
+
+
+	</body>
+</html>

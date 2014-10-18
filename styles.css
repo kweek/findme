@@ -1,0 +1,53 @@
+/* header styles */
+.header-wrapper {
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 100px;
+	text-align: center;
+}
+
+	header {
+		width: 100%;
+		margin: 0 auto 10px auto;; 
+	}
+		.site-name {
+			width: 30%;
+			float: left;
+			padding: 15px 0 5px 0px;
+		}
+		.site-menu {
+			width: 60%;
+			float: left;
+			padding: 35px 0 35px 0px;
+		}
+		.site-menu ul {
+			float: right;
+		}
+
+	
+
+.login-signup-form {
+	width: 300px;
+}
+
+.angular-google-map-container { 
+	height: 500px; 
+	width: 600px;
+	float: left;
+}
+
+.chat-container {
+	width: 500px;
+	float: left;
+
+}
+
+.chat-container h2 {
+	text-align: center;
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+
+
